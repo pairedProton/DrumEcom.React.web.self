@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg: #f3f1e5;
+    --color-secondary: #E8E268;
+    --font-heading: "Montserrat", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+
+    
+}
