@@ -6,7 +6,7 @@ import NavbarActions from './NavbarActions'
 
 const Navbar = () => {
   return (
-    <header className='w-full h-21  flex p-1 px-4 shadow-lg  justify-between items-center '>
+    <header className='w-full h-22  flex p-1 px-4 shadow-lg  justify-between items-center z-40'>
       <NavbarLogo/>
       <NavbarMenu/>
       <NavbarActions/>

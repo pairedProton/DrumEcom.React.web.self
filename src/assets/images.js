@@ -25,6 +25,16 @@ import uptan from '../assets/images/products/uptan.png';
 import darklogo from '../assets/images/logo/darklogo.png';
 import lightlogo from '../assets/images/logo/lightlogo.png';
 
+// ---------------- Icons ----------------//
+import { HiMiniChevronDown } from "react-icons/hi2";
+import { HiMiniChevronUp } from "react-icons/hi2";
+
+// ---------------- Home Videos ----------------//
+import gheeVideo from '../assets/videos/ghee.mp4';
+import morungaVideo from '../assets/videos/morunga.mp4';
+import quinoaVideo from '../assets/videos/quinoa.mp4';
+import tulsiVideo from '../assets/videos/tulsitea.mp4';
+import uptanVideo from '../assets/videos/uptan.mp4';
 
 export const bannerImages = {
   gift: giftBanner,
@@ -58,3 +68,17 @@ export const productImages = {
   turmericimmun,
   uptan,
 };
+
+export const icons = {
+  downIcon : HiMiniChevronDown,
+  upIcon : HiMiniChevronUp,
+};
+
+export const homeVideos = {
+  gheeVideo,
+  morungaVideo,
+  quinoaVideo,
+  tulsiVideo,
+  uptanVideo,
+};
+
