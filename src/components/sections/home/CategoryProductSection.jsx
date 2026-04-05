@@ -4,8 +4,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
+// import { usePopularProducts } from "../../../hooks/usePopularProducts";
 
-const CategoryProductSection = ({data,title}) => {
+
+
+
+const CategoryProductSection = ({products,loading,error,title}) => {
+  // const {popularProducts,loading,error} = usePopularProducts();
+
+  if(loading){
+    return <div>Loading...</div>
+  }
+
+  if(error){
+    return <div>Error: {error.message}</div>
+  }
+
   return (
     <div className="w-full flex flex-col justify-center items-center gap-4 p-4 px-10">
       <h3 className="text-2xl font-semibold text-gray-800 font-heading ">
@@ -37,10 +51,10 @@ const CategoryProductSection = ({data,title}) => {
           modules={[FreeMode, Autoplay]}
           className="mySwiper"
         >
-          {data.map(item => {
+          {products.map(product => {
             return (
               <SwiperSlide>
-                <ProductCard item={item} />
+                <ProductCard product={product} />
               </SwiperSlide>
             );
           })}

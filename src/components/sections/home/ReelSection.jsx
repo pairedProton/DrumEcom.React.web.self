@@ -5,7 +5,7 @@ import { FreeMode } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 import Reel from "../../ui/Reel";
 
-const ReelSection = ({ videoData }) => {
+const ReelSection = ({ videoData,loading,error }) => {
   return (
     <div className="w-full h-auto py-10 px-4 ">
       <div className="container mx-auto">
@@ -35,11 +35,12 @@ const ReelSection = ({ videoData }) => {
           className="mySwiper flex justify-between items-center gap-10"
         >
           <div className="flex justify-between items-center gap-10">
-            {videoData.map((item, index) => {
+            {videoData.map((reel, index) => {
               return (
-                <SwiperSlide key={index} className="h-auto!">
-                  <Reel item={item.video} />
-                  {/* <video src={item} alt="" /> */}
+                <SwiperSlide key={reel.id} className="h-auto!">
+                  
+                  <Reel reelData={reel.video || reel.video_url} />
+                  {/* <video src={reel} alt="" /> */}
                 </SwiperSlide>
               );
             })}

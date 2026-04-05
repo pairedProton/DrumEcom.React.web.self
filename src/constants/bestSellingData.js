@@ -20,7 +20,7 @@ const {
 } = productImages
 
 
-export const BestSellersData = [
+export const bestSellingData = [
     {
         id:1,
         name:"Ghee",

@@ -19,7 +19,7 @@ const {
   uptan,
 } = productImages
 
-export const ImmunityCategoryData = [
+export const immunityCategoryData = [
 {
     id:1,
     name:"Immunity Booster",
