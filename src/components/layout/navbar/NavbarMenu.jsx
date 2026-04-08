@@ -6,7 +6,7 @@ import {useCatSubCat} from '../../../hooks/useMegaMenu'
 
 const NavbarMenu = () => {
 
-
+const [activeMenu, setActiveMenu] = useState(null);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
     const {categories,loading,error} = useCatSubCat()
   return (
@@ -14,7 +14,9 @@ const NavbarMenu = () => {
       <ul className="flex gap-8">
         <li
           className="relative flex items-center gap-1"
-          onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+          // onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+          onMouseEnter={() => setActiveMenu("category")}
+          onMouseLeave={() => setActiveMenu(null)}
         >
           <span className="cursor-pointer onHoverGreen">Shop By Category</span>
           <span className="onHoverGreen">
@@ -31,7 +33,9 @@ const NavbarMenu = () => {
         </li>
         <li
           className="relative flex items-center gap-1"
-          onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+          // onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+          onMouseEnter={() => setActiveMenu("wellness")}
+          onMouseLeave={() => setActiveMenu(null)}
         >
           <span className="cursor-pointer onHoverGreen">Shop By Wellness</span>
           <span className="onHoverGreen">
@@ -48,7 +52,9 @@ const NavbarMenu = () => {
         </li>
         <li
           className="relative flex items-center gap-1"
-          onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+          // onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+          onMouseEnter={() => setActiveMenu("goal")}
+          onMouseLeave={() => setActiveMenu(null)}
         >
           <span className="cursor-pointer onHoverGreen">Shop By Goal</span>
           <span className="onHoverGreen">
