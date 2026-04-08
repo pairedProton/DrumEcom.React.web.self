@@ -8,7 +8,7 @@ import { PiShoppingCartSimpleThin } from "react-icons/pi";
 const NavbarActions = () => {
   return (
     <div className='flex gap-5 pr-2 ' >
-      <CiSearch className='text-xl hover:text-primary transition-colors cursor-pointer' />
+      {/* <CiSearch className='text-xl hover:text-primary transition-colors cursor-pointer' /> */}
       <CiUser className='text-xl hover:text-primary transition-colors cursor-pointer' />
       <CiHeart className='text-xl hover:text-primary transition-colors cursor-pointer' />
       <PiShoppingCartSimpleThin className='text-xl hover:text-primary transition-colors cursor-pointer' />

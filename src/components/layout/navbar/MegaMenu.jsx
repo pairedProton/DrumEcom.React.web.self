@@ -3,13 +3,13 @@ import React from "react";
 
 
 
-const MegaMenu = ({categories,loading,error}) => {
-  
+const MegaMenu = ({categories,loading,error,menuOpenStatus}) => {
+   const [isMegaMenuOpen, setIsMegaMenuOpen] = menuOpenStatus
 
   if(loading){
     return (
       <div
-        className="absolute left-0 top-full mt-4 flex
+        className="absolute left-0 top-full mt- flex
                      shadow-xl rounded-xl p-8 gap-8 z-50 font-body bg-gray-300 animate-pulse"
       >
       </div>
@@ -21,8 +21,13 @@ const MegaMenu = ({categories,loading,error}) => {
   }
   return (
     <div
-      className="absolute left-0 top-full mt-4 flex
-                     shadow-xl rounded-xl p-8 gap-8 z-50 font-body bg-bg"
+      className="absolute left-0 top-full mt-1 flex
+                     shadow-xl rounded-xl p-8 gap-8 z-50 font-body bg-bg" onMouseEnter={()=>{
+                      setIsMegaMenuOpen(true) 
+                     }}
+                     onMouseLeave={()=>{
+                      setIsMegaMenuOpen(false); 
+                     }}
     >
       {categories.map((cat, index) => (
         <div key={cat.id} className="flex flex-col gap-2 w-26">

@@ -1,5 +1,5 @@
 export const reviewsData = [
-    {
+    { id:1,
       imageUrl:
         "https://organicindia.com/cdn/shop/files/shradhya_88x88_crop_center.png?v=1667394204",
       product: "Tulsi Green Tea",
@@ -8,7 +8,7 @@ export const reviewsData = [
       name: "Shradhya Chakraborty",
       post: "Interior Designer",
     },
-    {
+    { id:2,
       imageUrl:
         "https://organicindia.com/cdn/shop/files/lalit_88x88_crop_center.png?v=1667396537",
       product: "Honey",
@@ -17,7 +17,7 @@ export const reviewsData = [
       name: "Lalit Yadav",
       post: "IT Manager",
     },
-    {
+    { id:3,
       imageUrl:
         "https://organicindia.com/cdn/shop/files/lalit_88x88_crop_center.png?v=1667396537",
       product: "Apple Cider Vinegar",
@@ -26,7 +26,7 @@ export const reviewsData = [
       name: "Pallavi Mishra",
       post: "Export House Owner",
     },
-    {
+    { id:4,     
       imageUrl:
         "https://organicindia.com/cdn/shop/files/lalit_88x88_crop_center.png?v=1667396537",
       product: "Quinoa",
@@ -35,7 +35,7 @@ export const reviewsData = [
       name: "Srijita Chakravarti",
       post: "Media Journalist",
     },
-    {
+    { id:5, 
       imageUrl:
         "https://organicindia.com/cdn/shop/files/lalit_88x88_crop_center.png?v=1667396537",
       product: "Jaggery Powder",

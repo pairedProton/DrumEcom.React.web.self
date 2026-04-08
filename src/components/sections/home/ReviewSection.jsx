@@ -3,8 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useReviews } from "../../../hooks/useReviews";
 
-const ReviewSection = ({ reviewsData }) => {
+
+const ReviewSection = () => {
+  const {reviews,loading,error} = useReviews()
+
+const defaultImageUrl = "https://organicindia.com/cdn/shop/files/lalit_88x88_crop_center.png?v=1667396537"
+const defaultProduct = "Tulsi Green Tea"
+
   return (
     <div className="w-full min-h-[600px] py-12 px-10 relative z-10 ">
       {/* Background Image */}
@@ -67,14 +74,14 @@ const ReviewSection = ({ reviewsData }) => {
             loop={true}
             className="review-swiper"
           >
-            {reviewsData?.map((review, index) => (
-              <SwiperSlide key={index}>
+            {reviews?.map((review, index) => (
+              <SwiperSlide key={review.id}>
                 <div className="flex flex-col items-center justify-center px-4 md:px-8">
                   {/* Profile Picture with Quote Icon */}
                   <div className="relative mb-6">
                     <div className="w-24 h-24 rounded-full border-4 border-green-600 overflow-hidden relative z-10">
                       <img
-                        src={review.imageUrl}
+                        src={review.imageUrl ||review.image ||defaultImageUrl}
                         alt={review.name}
                         className="w-full h-full object-cover object-center"
                       />
@@ -87,12 +94,12 @@ const ReviewSection = ({ reviewsData }) => {
 
                   {/* Product Name */}
                   <h3 className="text-4xl md:text-5xl font-light text-white mb-6 text-center">
-                    {review.product}
+                    {review.product ||defaultProduct}
                   </h3>
 
                   {/* Review Text */}
                   <p className="text-base md:text-lg text-white mb-8 text-left max-w-3xl leading-relaxed">
-                    {review.review}
+                    {review.review || review.message}
                   </p>
 
                   {/* Reviewer Details */}
