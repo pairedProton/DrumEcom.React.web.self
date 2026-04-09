@@ -3,8 +3,9 @@ import React from "react";
 
 
 
-const MegaMenu = ({categories,loading,error,menuOpenStatus}) => {
-   const [isMegaMenuOpen, setIsMegaMenuOpen] = menuOpenStatus
+const MegaMenu = ({categories,loading,error,setActiveMenu,type}) => {
+  //  const [isMegaMenuOpen, setIsMegaMenuOpen] = menuOpenStatus
+
 
   if(loading){
     return (
@@ -23,10 +24,10 @@ const MegaMenu = ({categories,loading,error,menuOpenStatus}) => {
     <div
       className="absolute left-0 top-full mt-1 flex
                      shadow-xl rounded-xl p-8 gap-8 z-50 font-body bg-bg" onMouseEnter={()=>{
-                      setIsMegaMenuOpen(true) 
+                      setActiveMenu(type) 
                      }}
                      onMouseLeave={()=>{
-                      setIsMegaMenuOpen(false); 
+                      setActiveMenu(null); 
                      }}
     >
       {categories.map((cat, index) => (
