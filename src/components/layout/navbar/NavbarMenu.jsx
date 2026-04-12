@@ -6,32 +6,27 @@ import {useCatDataHandler} from '../../../hooks/useCatDataHandler'
 
 const NavbarMenu = () => {
 
-
     // const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
     // const {categories,loading,error} = useMegaMenu()
     const [activeMenu, setActiveMenu] = useState(null);
     const {categoryData,wellnessData,goalData,loading,error} = useCatDataHandler()
 
-
-
     const getMenuData = () => {
   if (activeMenu === "category") return categoryData
   if (activeMenu === "wellness") return wellnessData
   if (activeMenu === "goal") return goalData
-  
 }
-
-
 
   return (
     <nav className="relative nav ml-10 select-none text-zinc-800 text-sm font-family-heading"
-    onMouseEnter={() => setActiveMenu(null)}
+    // onMouseLeave={() => setActiveMenu(null)}
     >
       {activeMenu && (
         <MegaMenu
           categories={getMenuData()}
           loading={loading}
           error={error}
+          setActiveMenu={setActiveMenu}
           // menuOpenStatus={[isMegaMenuOpen, setIsMegaMenuOpen]}
           type={activeMenu}
         />
@@ -70,9 +65,15 @@ const NavbarMenu = () => {
             {activeMenu === "goal" ? <icons.upIcon /> : <icons.downIcon />}
           </span>
         </li>
-        <li className="onHoverGreen">Deal of the Day</li>
-        <li className="onHoverGreen">Combo Offers</li>
-        <li className="onHoverGreen">Track Order</li>
+        <li className="onHoverGreen"
+        onMouseEnter={() => setActiveMenu(null)}
+        >Deal of the Day</li>
+        <li className="onHoverGreen"
+        onMouseEnter={() => setActiveMenu(null)}
+        >Combo Offers</li>
+        <li className="onHoverGreen"
+        onMouseEnter={() => setActiveMenu(null)}
+        >Track Order</li>
       </ul>
     </nav>
   );

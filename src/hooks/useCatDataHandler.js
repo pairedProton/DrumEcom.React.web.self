@@ -19,6 +19,9 @@ if (!categories || categories.length === 0) {
   }
 }
 
+
+//for saperating the products categories from the navdata.
+
 categories.forEach(cat => {
   cat.subcategories?.forEach(sub => {
     sub.products?.forEach(product => {
