@@ -1,8 +1,4 @@
 import React from "react";
-
-
-
-
 const MegaMenu = ({categories,loading,error,setActiveMenu,type
   // ,menuOpenStatus
 }) => {
