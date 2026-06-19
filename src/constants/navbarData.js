@@ -3,7 +3,15 @@ export const navbarData = [
     id: "1",
     name: "Pulses, Millets & Grains",
     slug: "pulses-millets-grains",
-    tags: ["pulses", "dal", "lentils", "grains", "millets", "cereals", "protein food"],
+    tags: [
+      "pulses",
+      "dal",
+      "lentils",
+      "grains",
+      "millets",
+      "cereals",
+      "protein food",
+    ],
 
     subcategories: [
       {
@@ -16,134 +24,288 @@ export const navbarData = [
           {
             id: "p1",
             name: "Toor Dal",
+            slug: "toor-dal",
             tags: ["toor dal", "arhar dal", "yellow dal", "lentils", "protein"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Plant Protein"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Plant Protein",
+                slug: "plant-protein",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Diet"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
           },
           {
             id: "p2",
             name: "Masoor Dal",
-            tags: ["masoor dal", "red lentils", "dal", "protein", "energy food"],
+            slug: "masoor-dal",
+            tags: [
+              "masoor dal",
+              "red lentils",
+              "dal",
+              "protein",
+              "energy food",
+            ],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Diet"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
           },
           {
             id: "p3",
             name: "Moong Dal (Yellow)",
-            tags: ["moong dal", "yellow moong", "split moong", "light food", "digestion"],
+            slug: "moong-dal-yellow",
+            tags: [
+              "moong dal",
+              "yellow moong",
+              "split moong",
+              "light food",
+              "digestion",
+            ],
             goal: {
-              category: "Digestion Support",
-              subcategory: "After Meal Comfort"
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "After Meal Comfort",
+                slug: "after-meal-comfort",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Bloating / Gas"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Bloating / Gas",
+                slug: "bloating-gas",
+              },
+            },
           },
           {
             id: "p4",
             name: "Moong Dal (Green)",
-            tags: ["green moong", "whole moong", "sprouts", "healthy dal", "digestion"],
+            slug: "moong-dal-green",
+            tags: [
+              "green moong",
+              "whole moong",
+              "sprouts",
+              "healthy dal",
+              "digestion",
+            ],
             goal: {
-              category: "Digestion Support",
-              subcategory: "After Meal Comfort"
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "After Meal Comfort",
+                slug: "after-meal-comfort",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Bloating / Gas"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Bloating / Gas",
+                slug: "bloating-gas",
+              },
+            },
           },
           {
             id: "p5",
             name: "Urad Dal",
-            tags: ["urad dal", "black gram", "dal makhani dal", "protein", "strength"],
+            slug: "urad-dal",
+            tags: [
+              "urad dal",
+              "black gram",
+              "dal makhani dal",
+              "protein",
+              "strength",
+            ],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Joint Care",
-              subcategory: "Muscle Care"
-            }
+              category: {
+                name: "Joint Care",
+                slug: "joint-care",
+              },
+              subcategory: {
+                name: "Muscle Care",
+                slug: "muscle-care",
+              },
+            },
           },
           {
             id: "p6",
             name: "Chana Dal",
+            slug: "chana-dal",
             tags: ["chana dal", "split chickpeas", "protein dal", "indian dal"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Diet"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
           },
           {
             id: "p7",
             name: "Kabuli Chana",
+            slug: "kabuli-chana",
             tags: ["kabuli chana", "chickpeas", "white chana", "protein"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Plant Protein"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Plant Protein",
+                slug: "plant-protein",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Cholesterol Care"
-            }
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Cholesterol Care",
+                slug: "cholesterol-care",
+              },
+            },
           },
           {
             id: "p8",
             name: "Kala Chana",
+            slug: "kala-chana",
             tags: ["black chana", "desi chana", "protein", "fiber rich"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Plant Protein"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Plant Protein",
+                slug: "plant-protein",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Gut Health"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Gut Health",
+                slug: "gut-health",
+              },
+            },
           },
           {
             id: "p9",
             name: "Rajma (Red)",
+            slug: "rajma-red",
             tags: ["rajma", "kidney beans", "red beans", "protein"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Plant Protein"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Plant Protein",
+                slug: "plant-protein",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Cholesterol Care"
-            }
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Cholesterol Care",
+                slug: "cholesterol-care",
+              },
+            },
           },
           {
             id: "p10",
             name: "Soybean",
+            slug: "soybean",
             tags: ["soybean", "soya", "protein rich", "muscle food"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Plant Protein"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Plant Protein",
+                slug: "plant-protein",
+              },
             },
             wellness: {
-              category: "Joint Care",
-              subcategory: "Muscle Care"
-            }
-          }
-        ]
+              category: {
+                name: "Joint Care",
+                slug: "joint-care",
+              },
+              subcategory: {
+                name: "Muscle Care",
+                slug: "muscle-care",
+              },
+            },
+          },
+        ],
       },
 
       {
@@ -156,333 +318,601 @@ export const navbarData = [
           {
             id: "p11",
             name: "Ragi",
+            slug: "ragi",
             tags: ["ragi", "finger millet", "calcium rich", "bone health"],
             goal: {
-              category: "Bone Health",
-              subcategory: "Bone Strength"
+              category: {
+                name: "Bone Health",
+                slug: "bone-health",
+              },
+              subcategory: {
+                name: "Bone Strength",
+                slug: "bone-strength",
+              },
             },
             wellness: {
-              category: "Joint Care",
-              subcategory: "Bone Health"
-            }
+              category: {
+                name: "Joint Care",
+                slug: "joint-care",
+              },
+              subcategory: {
+                name: "Bone Health",
+                slug: "bone-health",
+              },
+            },
           },
           {
             id: "p12",
             name: "Jowar",
+            slug: "jowar",
             tags: ["jowar", "sorghum", "gluten free", "weight loss"],
             goal: {
-              category: "Weight Support",
-              subcategory: "Daily Weight Balance"
+              category: {
+                name: "Weight Support",
+                slug: "weight-support",
+              },
+              subcategory: {
+                name: "Daily Weight Balance",
+                slug: "daily-weight-balance",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Metabolism Care"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+            },
           },
           {
             id: "p13",
             name: "Bajra",
+            slug: "bajra",
             tags: ["bajra", "pearl millet", "energy grain", "heart healthy"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Heart Health"
-            }
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Heart Health",
+                slug: "heart-health",
+              },
+            },
           },
           {
             id: "p14",
             name: "Foxtail Millet",
+            slug: "foxtail-millet",
             tags: ["foxtail millet", "millet", "weight loss grain"],
             goal: {
-              category: "Weight Support",
-              subcategory: "Daily Weight Balance"
+              category: {
+                name: "Weight Support",
+                slug: "weight-support",
+              },
+              subcategory: {
+                name: "Daily Weight Balance",
+                slug: "daily-weight-balance",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Weight Balance"
-            }
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Weight Balance",
+                slug: "weight-balance",
+              },
+            },
           },
           {
             id: "p15",
             name: "Amaranth (Rajgira)",
+            slug: "amaranth-rajgira",
             tags: ["rajgira", "amaranth", "protein grain", "fasting food"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Joint Care",
-              subcategory: "Bone Health"
-            }
-          }
-        ]
+              category: {
+                name: "Joint Care",
+                slug: "joint-care",
+              },
+              subcategory: {
+                name: "Bone Health",
+                slug: "bone-health",
+              },
+            },
+          },
+        ],
       },
 
-       {
-  id: "1-3",
-  name: "Rice & Grains",
-  slug: "rice-grains",
-  tags: ["rice", "grains", "basmati", "healthy grains", "staple food"],
+      {
+        id: "1-3",
+        name: "Rice & Grains",
+        slug: "rice-grains",
+        tags: ["rice", "grains", "basmati", "healthy grains", "staple food"],
 
-  products: [
-    {
-      id: "p16",
-      name: "Brown Basmati Rice",
-      tags: ["brown rice", "basmati rice", "weight loss rice", "fiber rich"],
-      goal: {
-        category: "Weight Support",
-        subcategory: "Daily Weight Balance"
+        products: [
+          {
+            id: "p16",
+            name: "Brown Basmati Rice",
+            slug: "brown-basmati-rice",
+            tags: [
+              "brown rice",
+              "basmati rice",
+              "weight loss rice",
+              "fiber rich",
+            ],
+            goal: {
+              category: {
+                name: "Weight Support",
+                slug: "weight-support",
+              },
+              subcategory: {
+                name: "Daily Weight Balance",
+                slug: "daily-weight-balance",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Weight Balance",
+                slug: "weight-balance",
+              },
+            },
+          },
+          {
+            id: "p17",
+            name: "Black Rice",
+            slug: "black-rice",
+            tags: [
+              "black rice",
+              "forbidden rice",
+              "antioxidant rice",
+              "healthy rice",
+            ],
+            goal: {
+              category: {
+                name: "Heart-Friendly Living",
+                slug: "heart-friendly-living",
+              },
+              subcategory: {
+                name: "Healthy Fats & Seeds",
+                slug: "healthy-fats-seeds",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Cholesterol Care",
+                slug: "cholesterol-care",
+              },
+            },
+          },
+          {
+            id: "p18",
+            name: "Sona Masuri Rice",
+            slug: "sona-masuri-rice",
+            tags: ["sona masuri", "white rice", "daily rice", "staple food"],
+            goal: {
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
+          },
+        ],
       },
-      wellness: {
-        category: "Metabolism Care",
-        subcategory: "Weight Balance"
-      }
-    },
-    {
-      id: "p17",
-      name: "Black Rice",
-      tags: ["black rice", "forbidden rice", "antioxidant rice", "healthy rice"],
-      goal: {
-        category: "Heart-Friendly Living",
-        subcategory: "Healthy Fats & Seeds"
-      },
-      wellness: {
-        category: "Heart Care",
-        subcategory: "Cholesterol Care"
-      }
-    },
-    {
-      id: "p18",
-      name: "Sona Masuri Rice",
-      tags: ["sona masuri", "white rice", "daily rice", "staple food"],
-      goal: {
-        category: "Energy & Vitality",
-        subcategory: "Daily Energy"
-      },
-      wellness: {
-        category: "Nutrition Supplements",
-        subcategory: "Healthy Diet"
-      }
-    }
-  ]
-},
-    ]
+    ],
   },
- 
 
-{
-  id: "2",
-  name: "Cooking Oils & Ghee",
-  slug: "oils-ghee",
-  tags: ["oil", "cooking oil", "ghee", "healthy fats", "kitchen essentials"],
+  {
+    id: "2",
+    name: "Cooking Oils & Ghee",
+    slug: "oils-ghee",
+    tags: ["oil", "cooking oil", "ghee", "healthy fats", "kitchen essentials"],
 
-  subcategories: [
-    {
-      id: "2-1",
-      name: "Cooking Oils",
-      tags: ["cooking oil", "healthy oil", "kitchen oil"],
+    subcategories: [
+      {
+        id: "2-1",
+        name: "Cooking Oils",
+        tags: ["cooking oil", "healthy oil", "kitchen oil"],
 
-      products: [
-        {
-          id: "p19",
-          name: "Coconut Oil",
-          tags: ["coconut oil", "hair oil", "cooking oil", "healthy fat"],
-          goal: {
-            category: "Healthy Cooking",
-            subcategory: "Cooking Staples"
+        products: [
+          {
+            id: "p19",
+            name: "Coconut Oil",
+            slug: "coconut-oil",
+            tags: ["coconut oil", "hair oil", "cooking oil", "healthy fat"],
+            goal: {
+              category: {
+                name: "Healthy Cooking",
+                slug: "healthy-cooking",
+              },
+              subcategory: {
+                name: "Cooking Staples",
+                slug: "cooking-staples",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Healthy Cooking Medium",
+                slug: "healthy-cooking-medium",
+              },
+            },
           },
-          wellness: {
-            category: "Heart Care",
-            subcategory: "Healthy Cooking Medium"
-          }
-        },
-        {
-          id: "p20",
-          name: "Mustard Oil",
-          tags: ["mustard oil", "sarson oil", "indian cooking oil"],
-          goal: {
-            category: "Healthy Cooking",
-            subcategory: "Cooking Staples"
+          {
+            id: "p20",
+            name: "Mustard Oil",
+            slug: "mustard-oil",
+            tags: ["mustard oil", "sarson oil", "indian cooking oil"],
+            goal: {
+              category: {
+                name: "Healthy Cooking",
+                slug: "healthy-cooking",
+              },
+              subcategory: {
+                name: "Cooking Staples",
+                slug: "cooking-staples",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Healthy Cooking Medium",
+                slug: "healthy-cooking-medium",
+              },
+            },
           },
-          wellness: {
-            category: "Heart Care",
-            subcategory: "Healthy Cooking Medium"
-          }
-        },
-        {
-          id: "p21",
-          name: "Groundnut Oil",
-          tags: ["groundnut oil", "peanut oil", "cooking oil"],
-          goal: {
-            category: "Healthy Cooking",
-            subcategory: "Cooking Staples"
+          {
+            id: "p21",
+            name: "Groundnut Oil",
+            slug: "groundnut-oil",
+            tags: ["groundnut oil", "peanut oil", "cooking oil"],
+            goal: {
+              category: {
+                name: "Healthy Cooking",
+                slug: "healthy-cooking",
+              },
+              subcategory: {
+                name: "Cooking Staples",
+                slug: "cooking-staples",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Healthy Cooking Medium",
+                slug: "healthy-cooking-medium",
+              },
+            },
           },
-          wellness: {
-            category: "Heart Care",
-            subcategory: "Healthy Cooking Medium"
-          }
-        }
-      ]
-    },
+        ],
+      },
 
-    {
-      id: "2-2",
-      name: "Ghee",
-      tags: ["ghee", "clarified butter", "desi ghee", "ayurvedic ghee"],
+      {
+        id: "2-2",
+        name: "Ghee",
+        tags: ["ghee", "clarified butter", "desi ghee", "ayurvedic ghee"],
 
-      products: [
-        {
-          id: "p22",
-          name: "A2 Bilona Ghee",
-          tags: ["a2 ghee", "bilona ghee", "desi ghee", "immunity"],
-          goal: {
-            category: "Immunity Support",
-            subcategory: "Daily Immunity"
+        products: [
+          {
+            id: "p22",
+            name: "A2 Bilona Ghee",
+            slug: "a2-bilona-ghee",
+            tags: ["a2 ghee", "bilona ghee", "desi ghee", "immunity"],
+            goal: {
+              category: {
+                name: "Immunity Support",
+                slug: "immunity-support",
+              },
+              subcategory: {
+                name: "Daily Immunity",
+                slug: "daily-immunity",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Gut Health",
+                slug: "gut-health",
+              },
+            },
           },
-          wellness: {
-            category: "Gut Care",
-            subcategory: "Gut Health"
-          }
-        },
-        {
-          id: "p23",
-          name: "Organic Cow Ghee",
-          tags: ["cow ghee", "organic ghee", "healthy fat"],
-          goal: {
-            category: "Energy & Vitality",
-            subcategory: "Daily Energy"
+          {
+            id: "p23",
+            name: "Organic Cow Ghee",
+            slug: "organic-cow-ghee",
+            tags: ["cow ghee", "organic ghee", "healthy fat"],
+            goal: {
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
           },
-          wellness: {
-            category: "Nutrition Supplements",
-            subcategory: "Healthy Diet"
-          }
-        }
-      ]
-    }
-  ]
-},
+        ],
+      },
+    ],
+  },
 
-{
-  id: "3",
-  name: "Spices & Seeds",
-  slug: "spices-seeds",
-  tags: ["spices", "masala", "seeds", "indian spices"],
+  {
+    id: "3",
+    name: "Spices & Seeds",
+    slug: "spices-seeds",
+    tags: ["spices", "masala", "seeds", "indian spices"],
 
-  subcategories: [
-    {
-      id: "3-1",
-      name: "Whole Spices",
-      tags: ["whole spices", "indian masala", "raw spices"],
+    subcategories: [
+      {
+        id: "3-1",
+        name: "Whole Spices",
+        tags: ["whole spices", "indian masala", "raw spices"],
 
-      products: [
-        {
-          id: "p24",
-          name: "Cumin Seeds",
-          tags: ["jeera", "cumin seeds", "digestion spice"],
-          goal: {
-            category: "Digestion Support",
-            subcategory: "After Meal Comfort"
+        products: [
+          {
+            id: "p24",
+            name: "Cumin Seeds",
+            slug: "cumin-seeds",
+            tags: ["jeera", "cumin seeds", "digestion spice"],
+            goal: {
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "After Meal Comfort",
+                slug: "after-meal-comfort",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Bloating / Gas",
+                slug: "bloating-gas",
+              },
+            },
           },
-          wellness: {
-            category: "Gut Care",
-            subcategory: "Bloating / Gas"
-          }
-        },
-        {
-          id: "p25",
-          name: "Fennel Seeds",
-          tags: ["saunf", "fennel", "mouth freshener", "digestion"],
-          goal: {
-            category: "Digestion Support",
-            subcategory: "After Meal Comfort"
+          {
+            id: "p25",
+            name: "Fennel Seeds",
+            slug: "fennel-seeds",
+            tags: ["saunf", "fennel", "mouth freshener", "digestion"],
+            goal: {
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "After Meal Comfort",
+                slug: "after-meal-comfort",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Bloating / Gas",
+                slug: "bloating-gas",
+              },
+            },
           },
-          wellness: {
-            category: "Gut Care",
-            subcategory: "Bloating / Gas"
-          }
-        },
-        {
-          id: "p26",
-          name: "Ajwain",
-          tags: ["ajwain", "carom seeds", "gas relief"],
-          goal: {
-            category: "Digestion Support",
-            subcategory: "After Meal Comfort"
+          {
+            id: "p26",
+            name: "Ajwain",
+            slug: "ajwain",
+            tags: ["ajwain", "carom seeds", "gas relief"],
+            goal: {
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "After Meal Comfort",
+                slug: "after-meal-comfort",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Bloating / Gas",
+                slug: "bloating-gas",
+              },
+            },
           },
-          wellness: {
-            category: "Gut Care",
-            subcategory: "Bloating / Gas"
-          }
-        },
-        {
-          id: "p27",
-          name: "Turmeric (Whole)",
-          tags: ["haldi", "turmeric", "immunity spice", "anti inflammatory"],
-          goal: {
-            category: "Immunity Support",
-            subcategory: "Daily Immunity"
+          {
+            id: "p27",
+            name: "Turmeric (Whole)",
+            slug: "turmeric-whole",
+            tags: ["haldi", "turmeric", "immunity spice", "anti inflammatory"],
+            goal: {
+              category: {
+                name: "Immunity Support",
+                slug: "immunity-support",
+              },
+              subcategory: {
+                name: "Daily Immunity",
+                slug: "daily-immunity",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Immunity Care",
+                slug: "immunity-care",
+              },
+              subcategory: {
+                name: "General Immunity",
+                slug: "general-immunity",
+              },
+            },
           },
-          wellness: {
-            category: "Immunity Care",
-            subcategory: "General Immunity"
-          }
-        }
-      ]
-    },
+        ],
+      },
 
-    {
-      id: "3-2",
-      name: "Seeds",
-      tags: ["seeds", "healthy seeds", "superfoods"],
+      {
+        id: "3-2",
+        name: "Seeds",
+        tags: ["seeds", "healthy seeds", "superfoods"],
 
-      products: [
-        {
-          id: "p28",
-          name: "Chia Seeds",
-          tags: ["chia seeds", "omega 3", "weight loss", "superfood"],
-          goal: {
-            category: "Heart-Friendly Living",
-            subcategory: "Healthy Fats & Seeds"
+        products: [
+          {
+            id: "p28",
+            name: "Chia Seeds",
+            slug: "chia-seeds",
+            tags: ["chia seeds", "omega 3", "weight loss", "superfood"],
+            goal: {
+              category: {
+                name: "Heart-Friendly Living",
+                slug: "heart-friendly-living",
+              },
+              subcategory: {
+                name: "Healthy Fats & Seeds",
+                slug: "healthy-fats-seeds",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Cholesterol Care",
+                slug: "cholesterol-care",
+              },
+            },
           },
-          wellness: {
-            category: "Heart Care",
-            subcategory: "Cholesterol Care"
-          }
-        },
-        {
-          id: "p29",
-          name: "Flaxseeds",
-          tags: ["flax seeds", "alsi", "omega 3", "fiber"],
-          goal: {
-            category: "Heart-Friendly Living",
-            subcategory: "Healthy Fats & Seeds"
+          {
+            id: "p29",
+            name: "Flaxseeds",
+            slug: "flaxseeds",
+            tags: ["flax seeds", "alsi", "omega 3", "fiber"],
+            goal: {
+              category: {
+                name: "Heart-Friendly Living",
+                slug: "heart-friendly-living",
+              },
+              subcategory: {
+                name: "Healthy Fats & Seeds",
+                slug: "healthy-fats-seeds",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Cholesterol Care",
+                slug: "cholesterol-care",
+              },
+            },
           },
-          wellness: {
-            category: "Heart Care",
-            subcategory: "Cholesterol Care"
-          }
-        },
-        {
-          id: "p30",
-          name: "Pumpkin Seeds",
-          tags: ["pumpkin seeds", "zinc rich", "immunity", "snack seeds"],
-          goal: {
-            category: "Energy & Vitality",
-            subcategory: "Daily Energy"
+          {
+            id: "p30",
+            name: "Pumpkin Seeds",
+            slug: "pumpkin-seeds",
+            tags: ["pumpkin seeds", "zinc rich", "immunity", "snack seeds"],
+            goal: {
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
+            },
+            wellness: {
+              category: {
+                name: "Immunity Care",
+                slug: "immunity-care",
+              },
+              subcategory: {
+                name: "General Immunity",
+                slug: "general-immunity",
+              },
+            },
           },
-          wellness: {
-            category: "Immunity Care",
-            subcategory: "General Immunity"
-          }
-        }
-      ]
-    }
-  ]
-},
-
+        ],
+      },
+    ],
+  },
 
   {
     id: "4",
@@ -500,43 +930,82 @@ export const navbarData = [
           {
             id: "p31",
             name: "Almonds",
+            slug: "almonds",
             tags: ["almonds", "badam", "brain food", "protein snack"],
             goal: {
-              category: "Brain Health",
-              subcategory: "Cognitive Support"
+              category: {
+                name: "Brain Health",
+                slug: "brain-health",
+              },
+              subcategory: {
+                name: "Cognitive Support",
+                slug: "cognitive-support",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Diet"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
           },
           {
             id: "p32",
             name: "Cashews",
+            slug: "cashews",
             tags: ["cashews", "kaju", "energy snack"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Heart Health"
-            }
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Heart Health",
+                slug: "heart-health",
+              },
+            },
           },
           {
             id: "p33",
             name: "Walnuts",
+            slug: "walnuts",
             tags: ["walnuts", "akhrot", "brain food", "omega 3"],
             goal: {
-              category: "Brain Health",
-              subcategory: "Cognitive Support"
+              category: {
+                name: "Brain Health",
+                slug: "brain-health",
+              },
+              subcategory: {
+                name: "Cognitive Support",
+                slug: "cognitive-support",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Cholesterol Care"
-            }
-          }
-        ]
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Cholesterol Care",
+                slug: "cholesterol-care",
+              },
+            },
+          },
+        ],
       },
 
       {
@@ -548,45 +1017,84 @@ export const navbarData = [
           {
             id: "p34",
             name: "Raisins",
+            slug: "raisins",
             tags: ["raisins", "kishmish", "natural sugar", "digestion"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Digestion"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Digestion",
+                slug: "digestion",
+              },
+            },
           },
           {
             id: "p35",
             name: "Dates",
+            slug: "dates",
             tags: ["dates", "khajoor", "energy booster", "iron rich"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Anaemia"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Anaemia",
+                slug: "anaemia",
+              },
+            },
           },
           {
             id: "p36",
             name: "Dry Figs",
+            slug: "dry-figs",
             tags: ["figs", "anjeer", "fiber rich", "constipation relief"],
             goal: {
-              category: "Digestion Support",
-              subcategory: "Gut Regularity"
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "Gut Regularity",
+                slug: "gut-regularity",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Constipation"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Constipation",
+                slug: "constipation",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -605,56 +1113,108 @@ export const navbarData = [
           {
             id: "p37",
             name: "Ashwagandha Powder",
+            slug: "ashwagandha-powder",
             tags: ["ashwagandha", "stress relief", "sleep", "adaptogen"],
             goal: {
-              category: "Stress & Sleep",
-              subcategory: "Stress Relief"
+              category: {
+                name: "Stress & Sleep",
+                slug: "stress-sleep",
+              },
+              subcategory: {
+                name: "Stress Relief",
+                slug: "stress-relief",
+              },
             },
             wellness: {
-              category: "Sleep Care",
-              subcategory: "Stress"
-            }
+              category: {
+                name: "Sleep Care",
+                slug: "sleep-care",
+              },
+              subcategory: {
+                name: "Stress",
+                slug: "stress",
+              },
+            },
           },
           {
             id: "p38",
             name: "Triphala Powder",
+            slug: "triphala-powder",
             tags: ["triphala", "gut health", "detox", "digestion"],
             goal: {
-              category: "Digestion Support",
-              subcategory: "Gut Regularity"
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "Gut Regularity",
+                slug: "gut-regularity",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Constipation"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Constipation",
+                slug: "constipation",
+              },
+            },
           },
           {
             id: "p39",
             name: "Shatavari Powder",
+            slug: "shatavari-powder",
             tags: ["shatavari", "women health", "hormones"],
             goal: {
-              category: "Women Wellness",
-              subcategory: "Hormonal Balance"
+              category: {
+                name: "Women Wellness",
+                slug: "women-wellness",
+              },
+              subcategory: {
+                name: "Hormonal Balance",
+                slug: "hormonal-balance",
+              },
             },
             wellness: {
-              category: "Women's Health",
-              subcategory: "Hormonal Care"
-            }
+              category: {
+                name: "Women's Health",
+                slug: "women-s-health",
+              },
+              subcategory: {
+                name: "Hormonal Care",
+                slug: "hormonal-care",
+              },
+            },
           },
           {
             id: "p40",
             name: "Moringa Powder",
+            slug: "moringa-powder",
             tags: ["moringa", "superfood", "immunity", "nutrition"],
             goal: {
-              category: "Immunity Support",
-              subcategory: "Daily Immunity"
+              category: {
+                name: "Immunity Support",
+                slug: "immunity-support",
+              },
+              subcategory: {
+                name: "Daily Immunity",
+                slug: "daily-immunity",
+              },
             },
             wellness: {
-              category: "Immunity Care",
-              subcategory: "General Immunity"
-            }
-          }
-        ]
+              category: {
+                name: "Immunity Care",
+                slug: "immunity-care",
+              },
+              subcategory: {
+                name: "General Immunity",
+                slug: "general-immunity",
+              },
+            },
+          },
+        ],
       },
 
       {
@@ -666,45 +1226,84 @@ export const navbarData = [
           {
             id: "p41",
             name: "Spirulina Powder",
+            slug: "spirulina-powder",
             tags: ["spirulina", "detox", "superfood", "energy"],
             goal: {
-              category: "Detox Support",
-              subcategory: "Daily Detox"
+              category: {
+                name: "Detox Support",
+                slug: "detox-support",
+              },
+              subcategory: {
+                name: "Daily Detox",
+                slug: "daily-detox",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Detox"
-            }
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Detox",
+                slug: "detox",
+              },
+            },
           },
           {
             id: "p42",
             name: "Chlorella Powder",
+            slug: "chlorella-powder",
             tags: ["chlorella", "detox", "greens"],
             goal: {
-              category: "Detox Support",
-              subcategory: "Daily Detox"
+              category: {
+                name: "Detox Support",
+                slug: "detox-support",
+              },
+              subcategory: {
+                name: "Daily Detox",
+                slug: "daily-detox",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Detox"
-            }
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Detox",
+                slug: "detox",
+              },
+            },
           },
           {
             id: "p43",
             name: "Wheatgrass Powder",
+            slug: "wheatgrass-powder",
             tags: ["wheatgrass", "green juice", "energy", "alkaline"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Diet"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -723,30 +1322,56 @@ export const navbarData = [
           {
             id: "p44",
             name: "Tulsi Green Tea",
+            slug: "tulsi-green-tea",
             tags: ["tulsi tea", "immunity tea", "herbal tea"],
             goal: {
-              category: "Immunity Support",
-              subcategory: "Daily Immunity"
+              category: {
+                name: "Immunity Support",
+                slug: "immunity-support",
+              },
+              subcategory: {
+                name: "Daily Immunity",
+                slug: "daily-immunity",
+              },
             },
             wellness: {
-              category: "Immunity Care",
-              subcategory: "Cough / Cold"
-            }
+              category: {
+                name: "Immunity Care",
+                slug: "immunity-care",
+              },
+              subcategory: {
+                name: "Cough / Cold",
+                slug: "cough-cold",
+              },
+            },
           },
           {
             id: "p45",
             name: "Lemon Green Tea",
+            slug: "lemon-green-tea",
             tags: ["lemon tea", "weight loss tea", "detox"],
             goal: {
-              category: "Weight Support",
-              subcategory: "Daily Weight Balance"
+              category: {
+                name: "Weight Support",
+                slug: "weight-support",
+              },
+              subcategory: {
+                name: "Daily Weight Balance",
+                slug: "daily-weight-balance",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Weight Balance"
-            }
-          }
-        ]
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Weight Balance",
+                slug: "weight-balance",
+              },
+            },
+          },
+        ],
       },
 
       {
@@ -758,45 +1383,84 @@ export const navbarData = [
           {
             id: "p46",
             name: "Chamomile Tea",
+            slug: "chamomile-tea",
             tags: ["chamomile", "sleep tea", "calm"],
             goal: {
-              category: "Stress & Sleep",
-              subcategory: "Better Sleep"
+              category: {
+                name: "Stress & Sleep",
+                slug: "stress-sleep",
+              },
+              subcategory: {
+                name: "Better Sleep",
+                slug: "better-sleep",
+              },
             },
             wellness: {
-              category: "Sleep Care",
-              subcategory: "Sleep Issues"
-            }
+              category: {
+                name: "Sleep Care",
+                slug: "sleep-care",
+              },
+              subcategory: {
+                name: "Sleep Issues",
+                slug: "sleep-issues",
+              },
+            },
           },
           {
             id: "p47",
             name: "Hibiscus Tea",
+            slug: "hibiscus-tea",
             tags: ["hibiscus", "bp control", "heart tea"],
             goal: {
-              category: "Heart-Friendly Living",
-              subcategory: "Healthy Lifestyle"
+              category: {
+                name: "Heart-Friendly Living",
+                slug: "heart-friendly-living",
+              },
+              subcategory: {
+                name: "Healthy Lifestyle",
+                slug: "healthy-lifestyle",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Blood Pressure"
-            }
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Blood Pressure",
+                slug: "blood-pressure",
+              },
+            },
           },
           {
             id: "p48",
             name: "Ginger Tea",
+            slug: "ginger-tea",
             tags: ["ginger tea", "digestion tea", "gas relief"],
             goal: {
-              category: "Digestion Support",
-              subcategory: "After Meal Comfort"
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "After Meal Comfort",
+                slug: "after-meal-comfort",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Bloating / Gas"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Bloating / Gas",
+                slug: "bloating-gas",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -815,35 +1479,60 @@ export const navbarData = [
           {
             id: "p49",
             name: "Jaggery Powder",
+            slug: "jaggery-powder",
             tags: ["jaggery", "gur", "natural sugar"],
             goal: {
-              category: "Healthy Alternatives",
-              subcategory: "Sugar Replacement"
+              category: {
+                name: "Healthy Alternatives",
+                slug: "healthy-alternatives",
+              },
+              subcategory: {
+                name: "Sugar Replacement",
+                slug: "sugar-replacement",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Sweeteners"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Sweeteners",
+                slug: "healthy-sweeteners",
+              },
+            },
           },
           {
             id: "p50",
             name: "Coconut Sugar",
+            slug: "coconut-sugar",
             tags: ["coconut sugar", "low gi sugar"],
             goal: {
-              category: "Healthy Alternatives",
-              subcategory: "Sugar Replacement"
+              category: {
+                name: "Healthy Alternatives",
+                slug: "healthy-alternatives",
+              },
+              subcategory: {
+                name: "Sugar Replacement",
+                slug: "sugar-replacement",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Diabetes Support"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Diabetes Support",
+                slug: "diabetes-support",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
-  
   {
     id: "8",
     name: "Flours & Atta",
@@ -860,45 +1549,84 @@ export const navbarData = [
           {
             id: "p61",
             name: "Multigrain Atta",
+            slug: "multigrain-atta",
             tags: ["multigrain atta", "healthy flour", "fiber rich"],
             goal: {
-              category: "Daily Wellness",
-              subcategory: "Balanced Diet"
+              category: {
+                name: "Daily Wellness",
+                slug: "daily-wellness",
+              },
+              subcategory: {
+                name: "Balanced Diet",
+                slug: "balanced-diet",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Digestion"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Digestion",
+                slug: "digestion",
+              },
+            },
           },
           {
             id: "p62",
             name: "Besan (Gram Flour)",
+            slug: "besan-gram-flour",
             tags: ["besan", "gram flour", "protein flour"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Plant Protein"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Plant Protein",
+                slug: "plant-protein",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Diet"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
           },
           {
             id: "p63",
             name: "Ragi Flour",
+            slug: "ragi-flour",
             tags: ["ragi flour", "millet flour", "calcium rich"],
             goal: {
-              category: "Bone Health",
-              subcategory: "Bone Strength"
+              category: {
+                name: "Bone Health",
+                slug: "bone-health",
+              },
+              subcategory: {
+                name: "Bone Strength",
+                slug: "bone-strength",
+              },
             },
             wellness: {
-              category: "Joint Care",
-              subcategory: "Bone Health"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Joint Care",
+                slug: "joint-care",
+              },
+              subcategory: {
+                name: "Bone Health",
+                slug: "bone-health",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -917,45 +1645,84 @@ export const navbarData = [
           {
             id: "p64",
             name: "Pea Protein Powder",
+            slug: "pea-protein-powder",
             tags: ["pea protein", "vegan protein", "muscle gain"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Muscle Gain"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Muscle Gain",
+                slug: "muscle-gain",
+              },
             },
             wellness: {
-              category: "Joint Care",
-              subcategory: "Muscle Care"
-            }
+              category: {
+                name: "Joint Care",
+                slug: "joint-care",
+              },
+              subcategory: {
+                name: "Muscle Care",
+                slug: "muscle-care",
+              },
+            },
           },
           {
             id: "p65",
             name: "Soy Protein Powder",
+            slug: "soy-protein-powder",
             tags: ["soy protein", "soya protein", "muscle"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Muscle Gain"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Muscle Gain",
+                slug: "muscle-gain",
+              },
             },
             wellness: {
-              category: "Joint Care",
-              subcategory: "Muscle Care"
-            }
+              category: {
+                name: "Joint Care",
+                slug: "joint-care",
+              },
+              subcategory: {
+                name: "Muscle Care",
+                slug: "muscle-care",
+              },
+            },
           },
           {
             id: "p66",
             name: "Protein Mix",
+            slug: "protein-mix",
             tags: ["protein mix", "health mix", "fitness food"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Daily Protein Intake"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Daily Protein Intake",
+                slug: "daily-protein-intake",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Plant Proteins"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Plant Proteins",
+                slug: "plant-proteins",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -974,32 +1741,58 @@ export const navbarData = [
           {
             id: "p67",
             name: "Granola Mix",
+            slug: "granola-mix",
             tags: ["granola", "breakfast", "healthy snack"],
             goal: {
-              category: "Energy & Vitality",
-              subcategory: "Daily Energy"
+              category: {
+                name: "Energy & Vitality",
+                slug: "energy-vitality",
+              },
+              subcategory: {
+                name: "Daily Energy",
+                slug: "daily-energy",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Digestion"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Digestion",
+                slug: "digestion",
+              },
+            },
           },
           {
             id: "p68",
             name: "Oats Mix",
+            slug: "oats-mix",
             tags: ["oats", "breakfast", "weight loss"],
             goal: {
-              category: "Weight Support",
-              subcategory: "Healthy Breakfast"
+              category: {
+                name: "Weight Support",
+                slug: "weight-support",
+              },
+              subcategory: {
+                name: "Healthy Breakfast",
+                slug: "healthy-breakfast",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Weight Balance"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Weight Balance",
+                slug: "weight-balance",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -1018,43 +1811,82 @@ export const navbarData = [
           {
             id: "p69",
             name: "Multani Mitti",
+            slug: "multani-mitti",
             tags: ["multani mitti", "face pack", "acne"],
             goal: {
-              category: "Skin & Beauty",
-              subcategory: "Skin Detox"
+              category: {
+                name: "Skin & Beauty",
+                slug: "skin-beauty",
+              },
+              subcategory: {
+                name: "Skin Detox",
+                slug: "skin-detox",
+              },
             },
             wellness: {
-              category: "Skin Care",
-              subcategory: "Acne"
-            }
+              category: {
+                name: "Skin Care",
+                slug: "skin-care",
+              },
+              subcategory: {
+                name: "Acne",
+                slug: "acne",
+              },
+            },
           },
           {
             id: "p70",
             name: "Neem Powder",
+            slug: "neem-powder",
             tags: ["neem", "acne care", "skin"],
             goal: {
-              category: "Skin & Beauty",
-              subcategory: "Acne Care"
+              category: {
+                name: "Skin & Beauty",
+                slug: "skin-beauty",
+              },
+              subcategory: {
+                name: "Acne Care",
+                slug: "acne-care",
+              },
             },
             wellness: {
-              category: "Skin Care",
-              subcategory: "Acne"
-            }
+              category: {
+                name: "Skin Care",
+                slug: "skin-care",
+              },
+              subcategory: {
+                name: "Acne",
+                slug: "acne",
+              },
+            },
           },
           {
             id: "p71",
             name: "Rose Powder",
+            slug: "rose-powder",
             tags: ["rose powder", "skin glow", "face care"],
             goal: {
-              category: "Skin & Beauty",
-              subcategory: "Skin Glow"
+              category: {
+                name: "Skin & Beauty",
+                slug: "skin-beauty",
+              },
+              subcategory: {
+                name: "Skin Glow",
+                slug: "skin-glow",
+              },
             },
             wellness: {
-              category: "Skin Care",
-              subcategory: "Skin Care"
-            }
-          }
-        ]
+              category: {
+                name: "Skin Care",
+                slug: "skin-care",
+              },
+              subcategory: {
+                name: "Skin Care",
+                slug: "skin-care",
+              },
+            },
+          },
+        ],
       },
 
       {
@@ -1066,45 +1898,84 @@ export const navbarData = [
           {
             id: "p72",
             name: "Bhringraj Powder",
+            slug: "bhringraj-powder",
             tags: ["bhringraj", "hair growth", "hair fall"],
             goal: {
-              category: "Hair Care",
-              subcategory: "Hair Growth"
+              category: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+              subcategory: {
+                name: "Hair Growth",
+                slug: "hair-growth",
+              },
             },
             wellness: {
-              category: "Hair Care",
-              subcategory: "Hair Loss"
-            }
+              category: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+              subcategory: {
+                name: "Hair Loss",
+                slug: "hair-loss",
+              },
+            },
           },
           {
             id: "p73",
             name: "Shikakai Powder",
+            slug: "shikakai-powder",
             tags: ["shikakai", "hair wash", "natural shampoo"],
             goal: {
-              category: "Hair Care",
-              subcategory: "Hair Cleansing"
+              category: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+              subcategory: {
+                name: "Hair Cleansing",
+                slug: "hair-cleansing",
+              },
             },
             wellness: {
-              category: "Hair Care",
-              subcategory: "Hair Care"
-            }
+              category: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+              subcategory: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+            },
           },
           {
             id: "p74",
             name: "Reetha Powder",
+            slug: "reetha-powder",
             tags: ["reetha", "soapnut", "hair wash"],
             goal: {
-              category: "Hair Care",
-              subcategory: "Hair Cleansing"
+              category: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+              subcategory: {
+                name: "Hair Cleansing",
+                slug: "hair-cleansing",
+              },
             },
             wellness: {
-              category: "Hair Care",
-              subcategory: "Hair Care"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+              subcategory: {
+                name: "Hair Care",
+                slug: "hair-care",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -1123,45 +1994,84 @@ export const navbarData = [
           {
             id: "p75",
             name: "Detox Greens Powder",
+            slug: "detox-greens-powder",
             tags: ["detox greens", "weight loss", "cleanse"],
             goal: {
-              category: "Detox Support",
-              subcategory: "Daily Detox"
+              category: {
+                name: "Detox Support",
+                slug: "detox-support",
+              },
+              subcategory: {
+                name: "Daily Detox",
+                slug: "daily-detox",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Detox"
-            }
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Detox",
+                slug: "detox",
+              },
+            },
           },
           {
             id: "p76",
             name: "Lemon Peel Powder",
+            slug: "lemon-peel-powder",
             tags: ["lemon peel", "fat burn", "metabolism"],
             goal: {
-              category: "Weight Support",
-              subcategory: "Metabolism Boost"
+              category: {
+                name: "Weight Support",
+                slug: "weight-support",
+              },
+              subcategory: {
+                name: "Metabolism Boost",
+                slug: "metabolism-boost",
+              },
             },
             wellness: {
-              category: "Metabolism Care",
-              subcategory: "Weight Balance"
-            }
+              category: {
+                name: "Metabolism Care",
+                slug: "metabolism-care",
+              },
+              subcategory: {
+                name: "Weight Balance",
+                slug: "weight-balance",
+              },
+            },
           },
           {
             id: "p77",
             name: "Beetroot Powder",
+            slug: "beetroot-powder",
             tags: ["beetroot", "blood health", "energy"],
             goal: {
-              category: "Heart-Friendly Living",
-              subcategory: "Healthy Blood Flow"
+              category: {
+                name: "Heart-Friendly Living",
+                slug: "heart-friendly-living",
+              },
+              subcategory: {
+                name: "Healthy Blood Flow",
+                slug: "healthy-blood-flow",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Blood Circulation"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Blood Circulation",
+                slug: "blood-circulation",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -1180,45 +2090,84 @@ export const navbarData = [
           {
             id: "p78",
             name: "Golden Milk Mix",
+            slug: "golden-milk-mix",
             tags: ["haldi milk", "immunity drink", "turmeric milk"],
             goal: {
-              category: "Immunity Support",
-              subcategory: "Daily Immunity"
+              category: {
+                name: "Immunity Support",
+                slug: "immunity-support",
+              },
+              subcategory: {
+                name: "Daily Immunity",
+                slug: "daily-immunity",
+              },
             },
             wellness: {
-              category: "Immunity Care",
-              subcategory: "General Immunity"
-            }
+              category: {
+                name: "Immunity Care",
+                slug: "immunity-care",
+              },
+              subcategory: {
+                name: "General Immunity",
+                slug: "general-immunity",
+              },
+            },
           },
           {
             id: "p79",
             name: "Ashwagandha Latte",
+            slug: "ashwagandha-latte",
             tags: ["ashwagandha drink", "stress relief drink"],
             goal: {
-              category: "Stress & Sleep",
-              subcategory: "Stress Relief"
+              category: {
+                name: "Stress & Sleep",
+                slug: "stress-sleep",
+              },
+              subcategory: {
+                name: "Stress Relief",
+                slug: "stress-relief",
+              },
             },
             wellness: {
-              category: "Sleep Care",
-              subcategory: "Stress"
-            }
+              category: {
+                name: "Sleep Care",
+                slug: "sleep-care",
+              },
+              subcategory: {
+                name: "Stress",
+                slug: "stress",
+              },
+            },
           },
           {
             id: "p80",
             name: "Protein Drink Mix",
+            slug: "protein-drink-mix",
             tags: ["protein drink", "fitness drink"],
             goal: {
-              category: "Protein & Fitness",
-              subcategory: "Daily Protein Intake"
+              category: {
+                name: "Protein & Fitness",
+                slug: "protein-fitness",
+              },
+              subcategory: {
+                name: "Daily Protein Intake",
+                slug: "daily-protein-intake",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Plant Proteins"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Plant Proteins",
+                slug: "plant-proteins",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -1237,32 +2186,58 @@ export const navbarData = [
           {
             id: "p81",
             name: "Wellness Combo Pack",
+            slug: "wellness-combo-pack",
             tags: ["health combo", "wellness box"],
             goal: {
-              category: "Daily Wellness",
-              subcategory: "Overall Health"
+              category: {
+                name: "Daily Wellness",
+                slug: "daily-wellness",
+              },
+              subcategory: {
+                name: "Overall Health",
+                slug: "overall-health",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Healthy Diet"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Healthy Diet",
+                slug: "healthy-diet",
+              },
+            },
           },
           {
             id: "p82",
             name: "Immunity Combo Pack",
+            slug: "immunity-combo-pack",
             tags: ["immunity kit", "health combo"],
             goal: {
-              category: "Immunity Support",
-              subcategory: "Daily Immunity"
+              category: {
+                name: "Immunity Support",
+                slug: "immunity-support",
+              },
+              subcategory: {
+                name: "Daily Immunity",
+                slug: "daily-immunity",
+              },
             },
             wellness: {
-              category: "Immunity Care",
-              subcategory: "General Immunity"
-            }
-          }
-        ]
-      }
-    ]
+              category: {
+                name: "Immunity Care",
+                slug: "immunity-care",
+              },
+              subcategory: {
+                name: "General Immunity",
+                slug: "general-immunity",
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -1281,70 +2256,135 @@ export const navbarData = [
           {
             id: "p83",
             name: "Seed Mix",
+            slug: "seed-mix",
             tags: ["seed mix", "healthy fats", "snack"],
             goal: {
-              category: "Heart-Friendly Living",
-              subcategory: "Healthy Fats & Seeds"
+              category: {
+                name: "Heart-Friendly Living",
+                slug: "heart-friendly-living",
+              },
+              subcategory: {
+                name: "Healthy Fats & Seeds",
+                slug: "healthy-fats-seeds",
+              },
             },
             wellness: {
-              category: "Heart Care",
-              subcategory: "Cholesterol Care"
-            }
+              category: {
+                name: "Heart Care",
+                slug: "heart-care",
+              },
+              subcategory: {
+                name: "Cholesterol Care",
+                slug: "cholesterol-care",
+              },
+            },
           },
           {
             id: "p84",
             name: "Fiber Mix",
+            slug: "fiber-mix",
             tags: ["fiber mix", "digestion", "gut health"],
             goal: {
-              category: "Digestion Support",
-              subcategory: "Gut Regularity"
+              category: {
+                name: "Digestion Support",
+                slug: "digestion-support",
+              },
+              subcategory: {
+                name: "Gut Regularity",
+                slug: "gut-regularity",
+              },
             },
             wellness: {
-              category: "Gut Care",
-              subcategory: "Constipation"
-            }
+              category: {
+                name: "Gut Care",
+                slug: "gut-care",
+              },
+              subcategory: {
+                name: "Constipation",
+                slug: "constipation",
+              },
+            },
           },
           {
             id: "p85",
             name: "Kids Nutrition Mix",
+            slug: "kids-nutrition-mix",
             tags: ["kids health", "growth powder"],
             goal: {
-              category: "Kids Nutrition",
-              subcategory: "Growth Support"
+              category: {
+                name: "Kids Nutrition",
+                slug: "kids-nutrition",
+              },
+              subcategory: {
+                name: "Growth Support",
+                slug: "growth-support",
+              },
             },
             wellness: {
-              category: "Nutrition Supplements",
-              subcategory: "Child Nutrition"
-            }
+              category: {
+                name: "Nutrition Supplements",
+                slug: "nutrition-supplements",
+              },
+              subcategory: {
+                name: "Child Nutrition",
+                slug: "child-nutrition",
+              },
+            },
           },
           {
             id: "p86",
             name: "Women Wellness Mix",
+            slug: "women-wellness-mix",
             tags: ["women health", "hormonal balance"],
             goal: {
-              category: "Women Wellness",
-              subcategory: "Hormonal Balance"
+              category: {
+                name: "Women Wellness",
+                slug: "women-wellness",
+              },
+              subcategory: {
+                name: "Hormonal Balance",
+                slug: "hormonal-balance",
+              },
             },
             wellness: {
-              category: "Women's Health",
-              subcategory: "Hormonal Care"
-            }
+              category: {
+                name: "Women's Health",
+                slug: "women-s-health",
+              },
+              subcategory: {
+                name: "Hormonal Care",
+                slug: "hormonal-care",
+              },
+            },
           },
           {
             id: "p87",
             name: "Men Vitality Mix",
+            slug: "men-vitality-mix",
             tags: ["men health", "energy"],
             goal: {
-              category: "Men Wellness",
-              subcategory: "Energy Support"
+              category: {
+                name: "Men Wellness",
+                slug: "men-wellness",
+              },
+              subcategory: {
+                name: "Energy Support",
+                slug: "energy-support",
+              },
             },
             wellness: {
-              category: "Men's Health",
-              subcategory: "Vitality"
-            }
-          }
-        ]
-      }
-    ]
-  }
+              category: {
+                name: "Men's Health",
+                slug: "men-s-health",
+              },
+              subcategory: {
+                name: "Vitality",
+                slug: "vitality",
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
 ];

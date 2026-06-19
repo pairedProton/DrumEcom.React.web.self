@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import Products from "../pages/Products/Products";
+import ProductList from "../pages/ProductList/ProductList";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import Cart from "../pages/Cart/Cart";
 import Checkout from "../pages/Checkout/Checkout";
@@ -19,9 +19,54 @@ const Routing = () => {
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
+
+        {/* Shop All Products */}
+        <Route path="/products" element={<ProductList />} />
+
+{/* main Categories  */}
+
+        {/* Shop by Category Page */}
+        <Route path="/products/category/:categorySlug" element={<ProductList />} />
+
+        {/* Shop Sub-Category Page */}
+        <Route
+          path="/products/category/:categorySlug/:subCategorySlug"
+          element={<ProductList />}
+        />
+        
+
+{/* wellness Categories  */}
+
+
+        {/* Shop by Category Page */}
+        <Route path="/products/wellness/:categorySlug" element={<ProductList />} />
+
+        {/* Shop Sub-Category Page */}
+        <Route
+          path="/products/wellness/:categorySlug/:subCategorySlug"
+          element={<ProductList />}
+        />
+
+    {/* Goal Category */}
+
+
+        {/* Shop by Category Page */}
+        <Route path="/products/goal/:categorySlug" element={<ProductList />} />
+
+        {/* Shop Sub-Category Page */}
+        <Route
+          path="/products/goal/:categorySlug/:subCategorySlug"
+          element={<ProductList />}
+        />
+
+
+        {/* Product Details */}
+        <Route path="/product/:productSlug" element={<ProductDetails />} />
+        
+        {/* Cart */}
         <Route path="/cart" element={<Cart />} />
+        
+        {/* Checkout */}
         <Route path="/checkout" element={<Checkout />} />
 
         {/* Info Pages */}

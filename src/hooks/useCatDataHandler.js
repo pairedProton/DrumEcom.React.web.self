@@ -1,68 +1,101 @@
-import { useMegaMenu } from "./useMegaMenu"
+import { useMegaMenu } from "./useMegaMenu";
 
 export const useCatDataHandler = () => {
-  const { categories, loading, error } = useMegaMenu()
+  const { categories, loading, error } = useMegaMenu();
 
-  // 🟢 Category (as it is)
-  const categoryData = categories
+  // Category (same as navbarData)
+  const categoryData = categories;
 
- const wellnessMap = {}
-const goalMap = {}
+  const wellnessMap = {};
+  const goalMap = {};
 
-if (!categories || categories.length === 0) {
-  return {
-    categoryData: [],
-    wellnessData: [],
-    goalData: [],
-    loading,
-    error
+  if (!categories || categories.length === 0) {
+    return {
+      categoryData: [],
+      wellnessData: [],
+      goalData: [],
+      loading,
+      error,
+    };
   }
-}
 
+  categories.forEach((cat) => {
+    cat.subcategories?.forEach((sub) => {
+      sub.products?.forEach((product) => {
+        // =========================
+        // WELLNESS
+        // =========================
 
-//for saperating the products categories from the navdata.
+        const wMainName = product.wellness?.category?.name;
+        const wMainSlug = product.wellness?.category?.slug;
 
-categories.forEach(cat => {
-  cat.subcategories?.forEach(sub => {
-    sub.products?.forEach(product => {
+        const wSubName = product.wellness?.subcategory?.name;
+        const wSubSlug = product.wellness?.subcategory?.slug;
 
-      // Wellness
-      const wMain = product.wellness?.category
-      const wSub = product.wellness?.subcategory
+        if (wMainName && wSubName) {
+          if (!wellnessMap[wMainName]) {
+            wellnessMap[wMainName] = {
+              slug: wMainSlug,
+              items: new Map(),
+            };
+          }
 
-      if (wMain && wSub) {
-        if (!wellnessMap[wMain]) wellnessMap[wMain] = new Set()
-        wellnessMap[wMain].add(wSub)
-      }
+          wellnessMap[wMainName].items.set(wSubName, wSubSlug);
+        }
 
-      // Goal
-      const gMain = product.goal?.category
-      const gSub = product.goal?.subcategory
+        // =========================
+        // GOAL
+        // =========================
 
-      if (gMain && gSub) {
-        if (!goalMap[gMain]) goalMap[gMain] = new Set()
-        goalMap[gMain].add(gSub)
-      }
+        const gMainName = product.goal?.category?.name;
+        const gMainSlug = product.goal?.category?.slug;
 
-    })
-  })
-})
+        const gSubName = product.goal?.subcategory?.name;
+        const gSubSlug = product.goal?.subcategory?.slug;
 
-const wellnessData = Object.keys(wellnessMap).map(key => ({
-  name: key,
-  items: Array.from(wellnessMap[key])
-}))
+        if (gMainName && gSubName) {
+          if (!goalMap[gMainName]) {
+            goalMap[gMainName] = {
+              slug: gMainSlug,
+              items: new Map(),
+            };
+          }
 
-const goalData = Object.keys(goalMap).map(key => ({
-  name: key,
-  items: Array.from(goalMap[key])
-}))
+          goalMap[gMainName].items.set(gSubName, gSubSlug);
+        }
+      });
+    });
+  });
+
+  const wellnessData = Object.keys(wellnessMap).map((key) => ({
+    id: key,
+    name: key,
+    slug: wellnessMap[key].slug,
+
+    items: Array.from(wellnessMap[key].items).map(([name, slug]) => ({
+      id: slug,
+      name,
+      slug,
+    })),
+  }));
+
+  const goalData = Object.keys(goalMap).map((key) => ({
+    id: key,
+    name: key,
+    slug: goalMap[key].slug,
+
+    items: Array.from(goalMap[key].items).map(([name, slug]) => ({
+      id: slug,
+      name,
+      slug,
+    })),
+  }));
 
   return {
     categoryData,
     wellnessData,
     goalData,
     loading,
-    error
-  }
-}
+    error,
+  };
+};

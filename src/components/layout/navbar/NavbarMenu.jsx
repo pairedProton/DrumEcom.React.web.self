@@ -27,16 +27,13 @@ const NavbarMenu = () => {
           loading={loading}
           error={error}
           setActiveMenu={setActiveMenu}
-          // menuOpenStatus={[isMegaMenuOpen, setIsMegaMenuOpen]}
           type={activeMenu}
         />
       )}
       <ul className="flex gap-8 ">
         <li
           className="relative flex items-center gap-1 "
-          // onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
           onMouseEnter={() => setActiveMenu("category")}
-          // onMouseLeave={() => setActiveMenu(null)}
         >
           <span className="cursor-pointer onHoverGreen">Shop By Category</span>
           <span className="onHoverGreen">
@@ -45,9 +42,7 @@ const NavbarMenu = () => {
         </li>
         <li
           className="relative flex items-center gap-1"
-          // onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
           onMouseEnter={() => setActiveMenu("wellness")}
-          // onMouseLeave={() => setActiveMenu(null)}
         >
           <span className="cursor-pointer onHoverGreen">Shop By Wellness</span>
           <span className="onHoverGreen">
@@ -56,9 +51,7 @@ const NavbarMenu = () => {
         </li>
         <li
           className="relative flex items-center gap-1"
-          // onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
           onMouseEnter={() => setActiveMenu("goal")}
-          // onMouseLeave={() => setActiveMenu(null)}
         >
           <span className="cursor-pointer onHoverGreen">Shop By Goal</span>
           <span className="onHoverGreen">
