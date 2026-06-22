@@ -2,13 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-
-
-
 const MegaMenu = ({categories,loading,error,setActiveMenu,type
-  // ,menuOpenStatus
+
 }) => {
-  //  const [isMegaMenuOpen, setIsMegaMenuOpen] = menuOpenStatus
+  
 console.log("categories: ",categories,"loading: ",loading,"error: ",error,"setActiveMenu: ",setActiveMenu,"type: ",type);
   const navigate = useNavigate();
   const getBasePath = () => {
