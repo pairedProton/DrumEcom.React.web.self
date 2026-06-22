@@ -4,6 +4,18 @@
 @theme {
     --color-bg: #f3f1e5;
     --color-secondary: #E8E268;
+
+    /* Brand greens (Figma) */
+    --color-brand: #2f5d40;
+    --color-brand-dark: #234731;
+    --color-brand-light: #6f9163;
+
+    /* Surfaces */
+    --color-hero: #dde7d1;
+    --color-cream: #ece6d2;
+
+    --font-heading: "Montserrat", sans-serif;
+    --font-body: "Open Sans", sans-serif;
     --font-family-heading: "Montserrat", sans-serif;
     --font-family-body: "Open Sans", sans-serif;
 }
