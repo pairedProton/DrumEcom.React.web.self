@@ -5,6 +5,7 @@ import ProductList from "../pages/ProductList/ProductList";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import Cart from "../pages/Cart/Cart";
 import Checkout from "../pages/Checkout/Checkout";
+import OrderSuccess from "../pages/OrderSuccess/OrderSuccess";
 import MainLayout from "../layouts/MainLayout";
 import About from "../pages/info/About";
 import Terms from "../pages/info/Terms";
@@ -68,6 +69,9 @@ const Routing = () => {
         
         {/* Checkout */}
         <Route path="/checkout" element={<Checkout />} />
+
+        {/* Order Success */}
+        <Route path="/order-success" element={<OrderSuccess />} />
 
         {/* Info Pages */}
         <Route path="/about" element={<About />} />
