@@ -8,7 +8,7 @@ import DevToggle from "../components/ui/DevToggle";
 
 const MainLayout = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col">
+    <div className="w-full min-h-screen flex flex-col bg-bg font-heading ">
       <DevToggle/> {/* floating button */}
       <Navbar />
       <main className="grow">

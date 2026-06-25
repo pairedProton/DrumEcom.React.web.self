@@ -5,8 +5,6 @@
 
 import { combineReducers } from "@reduxjs/toolkit"; // Helper to combine multiple reducers
 import baseSlice from "./slices/baseSlice";
-import loginSlice from "./slices/loginSlice";
-import bulkUploadSlice from "./slices/bulkUploadSlice";
 
 const rootReducer = combineReducers({
   base: baseSlice,

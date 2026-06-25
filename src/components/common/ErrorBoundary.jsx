@@ -3,12 +3,12 @@ import React from "react";
 class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { hasError: false };
+        this.state = { hasError: false, error: null };
     }
 
     static getDerivedStateFromError(error) {
         // Update state so the next render will show the fallback UI.
-        return { hasError: true };
+        return { hasError: true, error };
     }
 
     render() {
@@ -54,8 +54,8 @@ class ErrorBoundary extends React.Component {
                         </svg>
 
                         <div className="flex flex-col items-center justify-center gap-4">
-                            <h1 className="text-lg text-red-600 md:text-2xl">
-                                😔 {this.state.error.message ?? "Something Went Wrong"} 😔
+                            <h1 className="text-sm text-red-600 md:text-base text-center max-w-3xl">
+                                😔 {this.state.error?.message ?? "Something Went Wrong"} 😔
                             </h1>
                             <div className="flex items-center gap-2 *:cursor-pointer *:transition-all *:duration-200 *:ease-in-out">
                                 <button
